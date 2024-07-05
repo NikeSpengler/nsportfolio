@@ -1,4 +1,4 @@
-import styles from "./NavbarStyles.module.css"
+import './Navbar.css'
 import ThemeIcon from "../../assets/icon-circle.svg"
 import logo from "../../assets/logo-N(150px).svg"
 // import moon from "../../assets/icon-circle.svg"
@@ -10,21 +10,15 @@ const Navbar = () => {
     // const ThemeIcon = theme === 'light' ? sun : moon;
 
   return (
-    <div className={styles.navbar}>
-            <img src={logo} height={50}/>
+    <div className="navbar">
+            <img src={logo} height={40}/>
             {/* <a className={styles.logo} href="/" ></a> */}
-            <ul className={styles.menu}>
-                <li className={styles.menuitems}>
-                    <img height="20px" src={ThemeIcon} />
+            <ul className="menu">
+                <li className="menuitems">
+                    <img height="18px" src={ThemeIcon} />
                 </li>
-                <li className={styles.menuitems}>
-                    <a src="">Email</a>
-                </li>
-                <li className={styles.menuitems}>
-                    <a src="">Linkedin</a>
-                </li>
-                <li className={styles.menuitems}>
-                    <a src="">GitHub</a>
+                <li className="menuitems">
+                    <a src="">Lets talk!</a>
                 </li>
             </ul>
     </div>
